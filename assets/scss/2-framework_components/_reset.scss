@@ -1,0 +1,119 @@
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    @include font-face($font-all);
+    color: $color-gray-500;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+html {
+    @include breakpoint-max(lg) {
+        font-size: 87.5%;
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:focus {
+    outline: none;
+}
+ul,
+ol{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    @extend .transition-default;
+
+    &:hover {
+        text-decoration: none;
+    }
+    &:focus {
+        outline: 0;
+    }
+}
+
+button, .btn {
+    cursor: pointer;
+    padding: 0;
+    border: 0;
+    background: 0;
+
+    &:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+}
+picture {
+    display: inline-block;
+}
+span {
+    display: inline-block;
+}
+svg {
+    display: block;
+    text, tspan{
+        font-family: $font-body;
+    }
+}
+input,
+textarea {
+    padding: 0;
+
+    &:focus {
+        outline: 0;
+    }
+
+    @include input-placeholder {
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+table {
+    border-collapse: collapse;
+}
+section {
+    position: relative;
+}
+select{
+    width: 100%;
+}
+blockquote{
+    margin: 0;
+    padding: 0;
+}
+hr{
+    margin: 0;
+}
+ol {
+    list-style: decimal;
+    margin-left: 1.5em;
+}
+ul{
+    padding: 0;
+}
+li>ul,
+li>ol {
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width: 1200px) {
+    .container{
+        max-width: 1440px;
+    }
+}

@@ -1,0 +1,42 @@
+/**! ----- Theme Common colors (Also Used as extend in SCSS ) ---- **/
+// bg primary
+%bg-primary {
+    background: $color-primary;
+}
+// color primary
+%color-primary {
+    color: $color-primary;
+}
+// fill primary
+%fill-primary {
+    fill: $color-primary;
+}
+// btn border color
+%btn-border-color-primary {
+    border-color: $color-primary;
+}
+/**! ----- Base Font Color ---- **/
+%heading-text-color {
+    color: $color-black;
+}
+%body-text-color {
+    color: $color-gray-500;
+}
+
+// ALL OTHER COLOR HELPER CLASSES. 
+.color--black{
+    color: $color-black;
+}
+.color--white{
+    color: $color-white;
+}
+.color-gray--500{
+    color: $color-gray-500;
+}
+
+/**! ----- gradient color ---- **/
+.gradient-1{
+    background-image: $gradient-1;
+}
+
+

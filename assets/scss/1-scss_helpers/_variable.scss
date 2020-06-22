@@ -1,0 +1,88 @@
+// Breakpoints
+// =========================================================
+$breakpoints: ("": "",
+"xs": 575px,
+"sm": 576px,
+"md": 768px,
+"lg": 992px,
+"xl": 1200px,
+) !default;
+ 
+
+//  Color palette 
+// =============================================================
+$color-white: #ffffff !default;
+$color-black: #000000 !default;
+ 
+// Gray Shade 
+$color-gray-400: #8b8b8b !default;
+$color-gray-500: #717171 !default;
+
+// Orange Shade
+$color-orange: #ff706e !default;
+
+// Declaring the primary color.
+$color-primary:  $color-orange !default;
+ 
+// Gradient 
+$gradient-1: linear-gradient(45deg, #ff5f6d, #ffc371);
+$gradient-2: linear-gradient(-45deg, #ff5f6d, #ffc371);
+$gradient-3: linear-gradient(150deg, #ff5f6d, #ffc371);
+$gradient-4: linear-gradient(45deg, #ff5f6d, #ffc371 50%);
+$gradient-5: linear-gradient(-45deg, #ff5f6d 50%, #ffc371);
+
+ 
+// base font settings
+// =============================================================
+// $base-unit: 16 !default; // Default
+$base-line-height: 1rem !default;
+ 
+// fonts family
+// =============================================================
+$font-heading: 'Poppins', sans-serif !default;
+$font-body: 'Poppins', sans-serif !default;
+// $font-body: 'Poppins', 'Open Sans', sans-serif !default;
+
+ 
+// font family all
+// =============================================================
+$font-all: $font-body !default;
+ 
+// font Size
+// =============================================================
+$h1-font-size: rem(100) !default;
+$h2-font-size: rem(75) !default;
+$h3-font-size: rem(64) !default;
+$h4-font-size: rem(30) !default;
+$h5-font-size: rem(26) !default;
+$h6-font-size: rem(20) !default;
+$body-font-size: rem(23) !default;
+
+
+// font weight
+// =============================================================
+$h1-font-weight: 600 !default;
+$h2-font-weight: 700 !default;
+$h3-font-weight: 700 !default;
+$h4-font-weight: 300 !default;
+$h5-font-weight: 400 !default;
+$h6-font-weight: 700 !default;
+$body-font-weight: 400 !default;
+
+// font line height
+// =============================================================
+$h1-line-height: 1.22 !default;
+$h2-line-height: 1.48 !default;
+$h3-line-height: 1.5 !default;
+$h4-line-height: 1.53 !default;
+$h5-line-height: 1.54 !default;
+$h6-line-height: 1.55 !default;
+$body-line-height: 1.62 !default;
+ 
+// Spacer
+// =============================================================
+$standard-space: $base-line-height * 18.75 !default;//(300)
+ 
+// Box layout width
+// =============================================================
+$box-layout-width: 1366px !default;

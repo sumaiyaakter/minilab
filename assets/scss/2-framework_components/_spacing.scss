@@ -1,0 +1,37 @@
+.space--bottom{ // 100
+    padding-bottom: $standard-space / 3 !important;
+}
+
+.space--bottom--2{ // 70
+    padding-bottom: $standard-space / 4.285 !important;
+}
+.space--top--2{ // 60
+    padding-top: $standard-space / 6 !important;
+}
+
+@include breakpoint-min(lg){//100
+    .space--bottom,
+    .space--bottom--2{
+        padding-bottom: $standard-space / 3 !important;
+    }
+    .space--top--2{
+        padding-top: $standard-space / 3 !important;
+    }
+}
+
+@include breakpoint-min(xl){
+    .space{
+        &--bottom{
+            padding-bottom: $standard-space !important;
+        }
+        &--bottom--2{ // 115
+            padding-bottom: $standard-space / 2.60 !important;
+        }
+        &--top--2{ // 160 nu
+            padding-top: $standard-space / 1.875 !important;
+        }
+    }
+
+}
+
+

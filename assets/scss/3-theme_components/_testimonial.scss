@@ -1,0 +1,50 @@
+.testimonial{
+    position: relative;
+    .content-left{
+        @include breakpoint-min(lg){
+            z-index: 999;
+        }
+    }
+    @media only screen and (min-width: 1600px){
+        .slick-list.draggable {
+            overflow: inherit;
+        }
+        .slide-container{
+            &:before {
+                position: absolute;
+                content: "";
+                left: calc(-410%);
+                top: 0;
+                width: 406%;
+                height: 100%;
+                background: #fff;
+                z-index: 1;
+            }
+        }
+    }
+
+    .slide {
+        margin: 0 22px 10px;
+        box-shadow: 0px 2px 12px rgba(180, 180, 180, 0.25);
+        @extend .rounded--25;
+        padding: 50px 40px;
+        width: 100%;
+        margin-top: rem(80);
+        img{
+            width: rem(68);
+            height: rem(68);
+            border-radius: 50%;
+            margin-bottom: rem(30);
+        }
+        strong {
+            background: -webkit-linear-gradient(#ff5f6d, #ffc371 90%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: rem(20);
+        }
+        blockquote{
+            @extend .h5-font;
+            font-size: rem(20);
+        }
+    }
+}

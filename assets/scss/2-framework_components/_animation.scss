@@ -1,0 +1,40 @@
+// reveal
+.reveal {
+    opacity: 0;
+    transform: translate3d(0, 25px, 0);
+    transition: opacity 1s, transform 1s;
+    
+    &_visible {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+
+//  animation
+  .overlay--1, .overlay--3_1, .overlay--2, .overlay--5_1{
+      animation-name: float_up_down; 
+      animation-duration: 5s; 
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      
+      -webkit-animation-name: float_up_down; 
+      -webkit-animation-duration: 5s; 
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+      
+      -moz-animation-name: float_up_down; 
+      -moz-animation-duration: 5s; 
+      -moz-animation-iteration-count: infinite;
+      -moz-animation-timing-function: linear;
+      
+      -ms-animation-name: float_up_down; 
+      -ms-animation-duration: 5s; 
+      -ms-animation-iteration-count: infinite;
+      -ms-animation-timing-function: linear;
+      
+      -o-animation-name: float_left_right; 
+      -o-animation-duration: 5s; 
+      -o-animation-iteration-count: infinite;
+      -o-animation-timing-function: linear;
+  }

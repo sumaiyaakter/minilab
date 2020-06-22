@@ -1,0 +1,70 @@
+.section-banner{
+ 
+    position: relative;
+    z-index: 1;
+    @include breakpoint-min(xl) {
+        margin-bottom: -20px;
+        .banner-overlay{
+            background-image: $gradient-3;
+            width: 75%;
+            height: 100%;
+            position: absolute;
+            top: -1px;
+            right: 2px;
+            overflow: hidden;
+            @media (min-width: 1600px) {
+                width: 55%;
+            }
+            &::before, &::after{
+                position: absolute;
+                content: '';
+                z-index: 1;
+                width: 0;
+                height: 0;
+            }
+            
+            &::before{
+                top: -200px;
+                left: -100px;
+                border-left: 600px solid transparent;
+                border-right: 195px solid transparent;
+                border-top: 2000px solid #fff;
+                transform: rotate(172deg);
+                @media (min-width: 1600px) {
+                    top: -200px;
+                    left: -100px;
+                    border-left: 600px solid transparent;
+                    border-right: 60px solid transparent;
+                    border-top: 2000px solid #fff;
+                    transform: rotate(180deg);
+                }
+                
+            }
+             &::after{
+                bottom: -155px;
+                left: 0;
+                border-right: 3931px solid transparent;
+                border-bottom: 747px solid #fff;
+                transform: rotate(0deg);
+            }
+        }
+    }
+    .banner{
+        &-wrapper{
+            padding-top: 90px;
+            z-index: 2;
+            @include breakpoint-min(xl) {
+                padding-top: 250px;
+            }
+        }
+        &-content{
+            h2{
+                @include breakpoint-min(lg){
+                    padding-right: rem(85);
+                }
+            }
+        }
+    }
+    
+}
+

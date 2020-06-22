@@ -1,0 +1,20 @@
+{
+  "name": "scss",
+  "version": "1.0.0",
+  "description": "scss quick start",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch assets/scss/app.scss:assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumaiyaakter/Quickstart-Pack.git"
+  },
+  "author": "Sumaiya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sumaiyaakter/Quickstart-Pack/issues"
+  },
+  "homepage": "https://github.com/sumaiyaakter/Quickstart-Pack#readme"
+}

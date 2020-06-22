@@ -1,0 +1,54 @@
+
+.overlay--1{
+    top: -64px;
+    left: 0;
+    @include breakpoint-min(xl) {
+        top: -140px;
+        left: -55px;
+    }
+}
+.overlay--2{
+    top: rem(100);
+    left: rem(-100);
+}
+.overlay--3 {
+    &_1{
+        top: -95px;
+        left: 30px;
+        @include breakpoint-min(lg) {
+            // top: -10px;
+        }
+        @include breakpoint-min(xl) {
+            left: 195px;
+        }
+    }
+    &_2{
+        
+        left: 230px;
+        top: 0;
+        @include breakpoint-min(xl) {
+            left: 155px;
+            top: -30px;
+        }
+    }
+}
+.overlay--4 {
+    top: 100px;
+    left: -172px;
+}
+.overlay--5{
+    &_1 {
+        left: -35px;
+        @include breakpoint-min(lg) {
+            left: -92px;
+            top: 105px;
+        }
+    }
+    &_2 {
+        left: 270px;
+        @include breakpoint-min(lg) {
+            top: -75px;
+            left: 190px;
+        }
+    }
+}

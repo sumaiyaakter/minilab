@@ -1,0 +1,6 @@
+$base-unit: 16 !default; // Default
+
+@function rem($pixels, $context: $base-unit) {
+  @return #{$pixels/$context}rem;
+}
+

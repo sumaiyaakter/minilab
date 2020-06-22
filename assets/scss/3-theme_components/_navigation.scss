@@ -1,0 +1,60 @@
+.navbar.navbar-expand-lg{
+    .navbar-nav{
+        .nav-link{
+            font-size: rem(22);
+            font-weight: 500;
+            color: $color-white;
+            padding: 0 34px;
+            position: relative;
+            z-index: 1;
+            @include breakpoint-max(xl){
+                color: $color-primary;
+                padding: 0 25px;
+            }
+            &:before{
+                position: absolute;
+                transition: all 0.35s ease;
+                left: 33.99px;
+                top: 0;
+                padding: 0;
+                position: absolute;
+                content: attr(data-hover);
+                color: $color-black;
+                white-space: nowrap;
+                max-width: 0%;
+                overflow: hidden;
+                @include breakpoint-max(xl){
+                    left: 24.99px;
+                }
+            }
+            &:hover:before {
+                max-width: 100%;
+            }
+            &.active{
+                color: $color-white;
+            }
+        }
+    }
+  
+    @include breakpoint-max(lg){
+        .navbar{
+            &-nav{
+                padding-top: 45px;
+            }
+            &-toggler {
+                right: -14px;
+                position: absolute;
+                top: 4px;
+            }
+        }
+        .nav-link{
+            line-height: 45px;
+            color: $color-primary;
+        }
+    }
+   
+}
+
+
+
+

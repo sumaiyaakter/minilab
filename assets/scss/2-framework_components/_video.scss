@@ -1,0 +1,15 @@
+.video-cover {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .venobox{
+        position: absolute;
+    }
+}
+.vbox-close {
+    right: 20px;
+    top: 5px;
+    font-size: 45px;
+}
+

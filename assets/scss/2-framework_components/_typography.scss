@@ -1,0 +1,126 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  font-family: $font-heading;
+  @extend %heading-text-color;
+}
+
+h1 {
+  @extend .h1-font;
+}
+
+h2 {
+  @extend .h2-font;
+}
+
+h3 {
+  @extend .h3-font;
+}
+
+h4 {
+  @extend .h4-font;
+  color: $color-gray-500;
+}
+
+h5 {
+  @extend .h5-font;
+  color: $color-gray-500;
+}
+
+h6 {
+  @extend .h6-font;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  @extend .body-font;
+  @extend %body-text-color;
+}
+
+
+
+/**! ----- font Setting (size & line height, spacing etc) ---- **/
+.h1-font {
+    font-weight: $h1-font-weight;
+    font-size: rem(50);
+    line-height: $h3-line-height;
+    @include breakpoint-min(sm) {
+      font-size: $h3-font-size;
+    }
+    @include breakpoint-min(xl) {
+      font-size: $h1-font-size;
+      line-height: $h1-line-height;
+    }
+}
+ 
+.h2-font {
+    font-weight: $h2-font-weight;
+    line-height: $h3-line-height;
+    font-size: rem(36);
+    @include breakpoint-min(sm) {
+      font-size: rem(50);
+    }
+    @include breakpoint-min(xl) {
+      line-height: $h2-line-height;
+    }
+    @media only screen and (min-width: 1400px) {
+      font-size: $h2-font-size;
+    }
+  }
+  
+.h3-font {
+    font-weight: $h3-font-weight;
+    line-height: $h4-line-height;
+    font-size: rem(36);
+    @include breakpoint-min(sm) {
+      font-size: rem(50);
+    }
+    @include breakpoint-min(xl) {
+      font-size: $h3-font-size;
+      line-height: $h3-line-height;
+    }
+}
+.h4-font {
+  font-size: $h5-font-size;
+  line-height: $h4-line-height;
+  font-weight: $h4-font-weight;
+  @include breakpoint-min(md) {
+    font-size: $h4-font-size;
+
+  }
+}
+.h5-font {
+  font-size: $h5-font-size;
+  line-height: $h5-line-height;
+  font-weight: $h5-font-weight;
+}
+.h6-font {
+  font-size: $h6-font-size;
+  line-height: $h6-line-height;
+  font-weight: $h6-font-weight;
+}
+.body-font {
+  font-weight: $body-font-weight;
+  line-height: $body-line-height;
+  font-size: $h6-font-size;
+  @include breakpoint-min(xl) {
+    font-size: $body-font-size;
+
+  }
+}
+
+
+/**! ----- Font weight ---- **/
+.font-w {
+  &--600 {
+    font-weight: 600 !important;
+  }
+}
+

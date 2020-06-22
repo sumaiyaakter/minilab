@@ -1,0 +1,126 @@
+.btn{
+    border: 0;
+    outline: 0;
+    display: inline-flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    background: $gradient-5;
+    background-size: 200% auto;
+    font-size: rem(22);
+    color: $color-white;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 14px 20px;
+    border-radius: 0;
+    min-width: rem(245);
+    @extend .transition-default;
+    &:hover{
+        color: $color-white;
+        background-position: right center;
+    }
+}
+
+/**! ----- Button icon ---- **/
+.btn-icon{
+    font-size: rem(26);
+    margin-right: rem(0);
+}
+
+/**! ----- button Media (Play Buttons) ---- **/
+.btn-media{
+    background-image: $gradient-3;
+    height: rem(190);
+    width: rem(190);
+    border-radius: 100%;
+    @extend .transition-default;
+    @include breakpoint-max(md) {
+        height: rem(150);
+        width: rem(150);
+    }  
+    &:hover {
+        box-shadow: 0 0 0 8px rgba(255,255,255,0.2);
+        opacity: 1;
+        &:after {
+            box-shadow: 0 0 0 15px #ffffff;
+            transform: scale(1.5);
+            visibility: visible;
+            opacity: 0;
+        }
+    }
+    &:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 0 0 15px rgba(255,255,255,0);
+        border-radius: 100px;
+        transition: 0.5s;
+        transform: scale(0);
+        visibility: hidden;
+        opacity: 1;
+    }
+    i {
+        color: $color-white;
+        font-size: rem(75);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include breakpoint-max(md) {
+            font-size: rem(65);
+        }
+    }
+}
+
+
+
+
+
+/* Bob Up Down*/
+@-webkit-keyframes float_up_down {
+    0% {
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  
+    50% {
+      -webkit-transform: translateY(30px);
+      transform: translateY(30px);
+      opacity: 1;
+    }
+  
+    100% {
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes float_up_down {
+    0% {
+      transform: translateY(0px);
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  
+    50% {
+      transform: translateY(30px);
+      transform: translateY(30px);
+      opacity: 1;
+    }
+  
+    100% {
+      transform: translateY(0px);
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+ 
